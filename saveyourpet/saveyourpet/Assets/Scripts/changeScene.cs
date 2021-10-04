@@ -25,5 +25,12 @@ public class changeScene : MonoBehaviour
     public void GoToMain()
     {
         SceneManager.LoadScene("MainScene");
+        Time.timeScale = 1f;
     }
+
+    public void GoToHome()
+    {
+        SceneManager.LoadScene("HomeScene");
+    }
+
 }

@@ -10,6 +10,10 @@ public class gameManager : MonoBehaviour
     public GameObject badThing2;
     public GameObject gameOverTxt;
 
+    public GameObject retry;
+
+    public GameObject goHome;
+
     public Text timeTxt;
     float alive = 0.0f;
     public static gameManager I;
@@ -51,6 +55,8 @@ public class gameManager : MonoBehaviour
     {
         anim.SetBool("isDie",true);
         gameOverTxt.SetActive(true);
+        retry.SetActive(true);
+        goHome.SetActive(true);
         Invoke("dead",1.2f);
     }
 
